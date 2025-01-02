@@ -1,1 +1,7 @@
 # YouTube-Video-Downloader-A-Full-Stack-Solution
+
+This application enables users to download YouTube videos in various resolutions, including 480p, 360p, 720p, and 1080p. It utilizes a contemporary technology stack comprising HTML, CSS, JavaScript, .NET Web API, and youtube-dl to provide a seamless user experience and backend functionality.
+* **Frontend:** The user interface is constructed using HTML for structural elements, CSS for styling, and JavaScript for managing user interactions and communication with the backend. The frontend facilitates user input of a YouTube video URL, selection of the desired resolution, and initiation of the video download process. A progress bar is dynamically displayed during the download operation, utilizing real-time updates from the backend.
+* **Backend:** The .NET Web API handles video downloading by employing the robust open-source tool youtube-dl (or its maintained fork, yt-dlp) to extract and convert the video in the requested format. Upon receiving the video URL and resolution (FormatId), the backend initiates the download process by calling youtube-dl to fetch and transform the video. Subsequently, the streamed file is transmitted to the frontend. Additionally, real-time download progress updates are communicated to the frontend via SignalR, enabling users to monitor the download process in real-time.
+**Key Components:**
+- **youtube-dl:** Crucial for extracting and downloading videos from YouTube, ensuring broad compatibility with various video formats and resolutions.
