@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Downloader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>YouTube Video Downloader</h1>
+
+    <div class="container">
+        <div>
+            <label for="videoUrl">YouTube URL:</label>
+            <input type="text" id="videoUrl" placeholder="Enter YouTube video URL" />
+        </div>
+
+        <div>
+            <label for="resolution">Select Resolution:</label>
+            <select id="resolution">
+                <option value="480p">480p</option>
+                <option value="360p">360p</option>
+                <option value="720p">720p</option>
+                <option value="1080p">1080p</option>
+            </select>
+        </div>
+
+        <button id="downloadButton">Download Video</button>
+
+        <div id="progressContainer">
+            <div id="progressBar"></div>
+            <span id="progressText">0%</span>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@microsoft/signalr@5.0.11/dist/browser/signalr.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
